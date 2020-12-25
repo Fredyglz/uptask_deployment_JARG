@@ -1,0 +1,45 @@
+{
+    "name": "uptask",
+    "version": "1.0.0",
+    "description": "Proyeto UpTask con Node y MVC",
+    "main": "index.js",
+    "scripts": {
+        "desarrollo": "concurrently \"npm run dev \" \"npm run watch \"",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon ./index.js",
+        "start": "node ./index.js",
+        "watch": "webpack -w --mode development"
+    },
+    "author": "Alfredo Romero",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.21.0",
+        "bcrypt-nodejs": "^0.0.3",
+        "concurrently": "^5.3.0",
+        "connect-flash": "^0.1.1",
+        "cookie-parser": "^1.4.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "express-validator": "^6.7.0",
+        "html-to-text": "^6.0.0",
+        "juice": "^7.0.0",
+        "mysql2": "^2.2.5",
+        "nodemailer": "^6.4.17",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "pug": "^3.0.0",
+        "sequelize": "^6.3.5",
+        "shortid": "^2.2.16",
+        "slug": "^4.0.2",
+        "sweetalert2": "^10.12.5"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.10",
+        "babel-loader": "^8.2.2",
+        "nodemon": "^2.0.6",
+        "webpack": "^4.29.5",
+        "webpack-cli": "^3.2.3"
+    }
+}
